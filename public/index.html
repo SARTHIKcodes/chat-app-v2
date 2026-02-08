@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Realtime Chat App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>ChatHub</h1>
+
+    <!-- USER NAME -->
+    <input id="username" placeholder="Your name" />
+
+    <!-- CREATE ROOM -->
+    <button id="createBtn">Create Room</button>
+
+    <!-- JOIN ROOM -->
+    <input id="roomInput" placeholder="Room ID" />
+    <button id="joinBtn">Join Room</button>
+
+    <!-- COPY ROOM ID -->
+    <button id="copyBtn" style="display:none;">Copy Room ID</button>
+
+    <!-- CHAT AREA -->
+    <div id="chatBox" style="display:none;">
+      <div id="messages"></div>
+
+      <input id="messageInput" placeholder="Type a message..." />
+      <button id="sendBtn">Send</button>
+    </div>
+  </div>
+
+  <!-- SOCKET.IO -->
+  <script src="/socket.io/socket.io.js"></script>
+  <!-- MAIN JS -->
+  <script src="script.js"></script>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+        <div class="footer-left">
+            <!-- Replace base URLs with your profile URLs if desired -->
+            <a class="footer-link" href="https://www.instagram.com/ig_sarthik/?hl=en" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+            <a class="footer-link" href="https://www.linkedin.com/in/sarthik-maity-004a68380/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+            <a class="footer-link" href="https://github.com/SARTHIKcodes" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+        </div>
+        <div class="footer-right">
+            <p>© 2026 Sarthik Maity</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
